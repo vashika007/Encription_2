@@ -15,7 +15,7 @@ public class ConnectToDB {
 //				conn = ds.getConnection();
 				
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
-               conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "password");
+               conn = (Connection) DriverManager.getConnection("jdbc:mysql://mysql:3306/decentralize", "admin", "admin");
 
 			} catch (Exception e) {
 		
