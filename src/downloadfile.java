@@ -83,11 +83,11 @@ public class downloadfile extends HttpServlet {
              //copyFileUsingFileStreams(path1, path2);
     //Download status updation...
     //MODIFICATION 2 )...    		
-                Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+//                Class.forName("com.mysql.jdbc.Driver").newInstance();
+//                Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
  //MODIFICATION 2 (END)...          
                 
-                
+            Connection con2 = (Connection) ConnectToDB.getConnection();
                 String sa1="select * from register where id='"+userid+"' and name='"+name+"' and pkey='"+PUser+"'";
                 PreparedStatement pr=con2.prepareStatement(sa1);
 		ResultSet rs=pr.executeQuery();

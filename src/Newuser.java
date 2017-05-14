@@ -60,11 +60,11 @@ public class Newuser extends HttpServlet {
             //Connection con = DriverManager.getConnection("jdbc:odbc:PSE");
           
             
-  //MODIFICATION 1...          
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
-  //MODIFICATION 1 (END)...    
-           
+//  //MODIFICATION 1...          
+//            Class.forName("com.mysql.jdbc.Driver").newInstance();
+//            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+//  //MODIFICATION 1 (END)...    
+        	 Connection con = ConnectToDB.getConnection();
             
             PreparedStatement ps=con.prepareStatement("insert into register(id,name,password,city,mail,times,dates,pkey,type)values(?,?,?,?,?,?,?,?,?)");
             //PreparedStatement ps = con.prepareStatement("insert into Reg values ('a','a','a','a','a','a','a')");

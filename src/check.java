@@ -26,8 +26,9 @@ public class check {
 
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+            Connection con = ConnectToDB.getConnection();
             PreparedStatement ps1 = con.prepareStatement("select * from files");
             ResultSet rs1 = ps1.executeQuery();
             System.out.println(rs1);

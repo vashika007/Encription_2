@@ -52,9 +52,10 @@ public class blockusr extends HttpServlet {
 //MODIFICATION 1 )...    		
                      
 //MODIFICATION 1 )...    		
-                Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
- //MODIFICATION 1 (END)...    
+//                Class.forName("com.mysql.jdbc.Driver").newInstance();
+//                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+// //MODIFICATION 1 (END)...    
+            Connection con =  (Connection) ConnectToDB.getConnection();
                 if(acc.equals("Access"))
                 {
               String sa2="Update register set status='normal' where name='"+na+"'";
