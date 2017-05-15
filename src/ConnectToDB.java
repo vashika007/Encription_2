@@ -28,7 +28,7 @@ public class ConnectToDB {
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
 
 				 conn = (Connection)
-				 DriverManager.getConnection("jdbc:mysql://mysql.aes-encrytion.svc:3306/decentralize",
+				 DriverManager.getConnection("jdbc:mysql://10.130.25.244:3306/decentralize",
 				 "admin", "admin");
 				
 //				conn = (Connection) DriverManager.getConnection(ConnectionURL, connectionProps);
