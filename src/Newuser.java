@@ -61,10 +61,10 @@ public class Newuser extends HttpServlet {
           
             
 //  //MODIFICATION 1...          
-//            Class.forName("com.mysql.jdbc.Driver").newInstance();
-//            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
 //  //MODIFICATION 1 (END)...    
-        	 Connection con = ConnectToDB.getConnection();
+//        	 Connection con = ConnectToDB.getConnection();
             
             PreparedStatement ps=con.prepareStatement("insert into register(id,name,password,city,mail,times,dates,pkey,type)values(?,?,?,?,?,?,?,?,?)");
             //PreparedStatement ps = con.prepareStatement("insert into Reg values ('a','a','a','a','a','a','a')");
