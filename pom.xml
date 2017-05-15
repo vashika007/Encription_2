@@ -98,7 +98,7 @@
 			<resource>
 				<directory>src</directory>
 				<excludes>
-					<exclude>**/*.java</exclude>
+					<exclude>**/**</exclude>
 				</excludes>
 			</resource>
 		</resources>
@@ -107,6 +107,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
+					<includeEmptyDirs>true</includeEmptyDirs>
 					<debug>false</debug>
 					<source>1.7</source>
 					<target>1.7</target>
