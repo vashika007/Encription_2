@@ -63,7 +63,7 @@ public class Java_Encryption1 {
                             String uploadPaaht = properties.getProperty("uploadpath");
                         String out_put_path=uploadPaaht+n;
  //MODIFICATION 1                    
-                        String out_put_path1="C:/uploaded/"+n;
+//                        String out_put_path1="C:/uploaded/"+n;
 //MODIFICATION 1
 //Folder changes 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                           
                              
