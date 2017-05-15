@@ -131,7 +131,7 @@
 		{
 	  //MODIFICATION 2 )...    		
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                 Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+                 Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
  //MODIFICATION 2 (END)...          
   	//PreparedStatement pr=con.prepareStatement("select * from Reg");
                 String sa="select * from register";

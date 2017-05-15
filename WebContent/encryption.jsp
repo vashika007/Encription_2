@@ -54,8 +54,8 @@ String sk=(String)session.getAttribute("skey");
 <h3><font color="orange">Assign to</font></h3>
 <select class="" name="assignee">
 <%
-  Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
+Class.forName("com.mysql.jdbc.Driver").newInstance();
+Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...               
    
             //PreparedStatement pr=con.prepareStatement("select * from Reg");
