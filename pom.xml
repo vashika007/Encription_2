@@ -98,7 +98,7 @@
 			<resource>
 				<directory>src</directory>
 				<excludes>
-					<exclude>**/**</exclude>
+					<exclude>**/*.java</exclude>
 				</excludes>
 			</resource>
 		</resources>
