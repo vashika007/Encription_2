@@ -5,7 +5,7 @@ public class ConnectToDB {
 
 	private static Connection conn = null;
 
-	public static Connection getConnection() {
+	public static Connection getConnection() throws Exception {
 		if (conn != null) {
 			try {
 
@@ -37,6 +37,7 @@ public class ConnectToDB {
 
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				throw  e;
 			}
 
 		}
