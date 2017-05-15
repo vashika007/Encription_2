@@ -38,7 +38,7 @@ public class gotocheck extends HttpServlet {
     public static String path;
     public static String fname;
     public static String full_path;
-    public static String key_value;
+//    public static String key_value;
     String username=null;
     String f="";
 
@@ -109,7 +109,7 @@ public class gotocheck extends HttpServlet {
                             System.out.println("uploadPaaht" +uploadPaaht);
                             UPLOAD_DIRECTORY = uploadPaaht;
         HttpSession session = request.getSession();
-        key_value = (String) session.getAttribute("UKey");
+//        key_value = (String) session.getAttribute("UKey");
         //Modification 1  END     
         char content = 0;
         //process only if its multipart content
@@ -199,6 +199,7 @@ public class gotocheck extends HttpServlet {
                 request.setAttribute("message", "File Uploaded Successfully");
             } catch (Exception ex) {
                 request.setAttribute("message", "File Upload Failed due to " + ex);
+                ex.printStackTrace();
             }
 
         } else {
