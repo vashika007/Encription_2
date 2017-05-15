@@ -87,7 +87,8 @@ public class downloadfile extends HttpServlet {
 //                Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
  //MODIFICATION 2 (END)...          
                 
-            Connection con2 = (Connection) ConnectToDB.getConnection();
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
                 String sa1="select * from register where id='"+userid+"' and name='"+name+"' and pkey='"+PUser+"'";
                 PreparedStatement pr=con2.prepareStatement(sa1);
 		ResultSet rs=pr.executeQuery();

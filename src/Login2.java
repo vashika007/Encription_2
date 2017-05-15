@@ -48,7 +48,8 @@ public class Login2 extends HttpServlet {
 
 		try {
 			
-			Connection con = ConnectToDB.getConnection();
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
 			// MODIFICATION 1 (END)...
 			String sa = "select * from register where id='" + s1 + "' and password='" + p + "' and type='" + c + "'";
 			PreparedStatement pr = con.prepareStatement(sa);
