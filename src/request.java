@@ -55,7 +55,7 @@ public class request extends HttpServlet {
 //                Class.forName("com.mysql.jdbc.Driver").newInstance();
 //                Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...               
 
             //PreparedStatement ps=con.prepareStatement("update File1 set Upload='Uploaded' where userid='"+userid+"' and FileName='"+radio1+"'");

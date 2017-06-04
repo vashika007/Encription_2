@@ -87,7 +87,7 @@ public class allow extends HttpServlet {
 			// "root", "root");
 			// MODIFICATION 1 (END)...
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
 			String sa2 = "Update files set auditor='verified' where filename='" + FileName + "'";
 			// String sa2="update request set Key='"+key+"' where
 			// userID='"+user.trim()+"'";

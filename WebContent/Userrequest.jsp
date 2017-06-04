@@ -136,7 +136,7 @@
                String uid=(String)session.getAttribute("uid");
 //MODIFICATION 1 )...    		
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+                Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...               
 		//PreparedStatement pr=con.prepareStatement("select * from Reg");
             String sa="select * from requestst where Request='Sent'";
@@ -197,7 +197,7 @@
                      <br></br>
            <%      
   //MODIFICATION 2 )... 
-            Connection con1 = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con1 = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
             String sa1="select * from requestst where Request='Sent'";
             PreparedStatement pr1=con.prepareStatement(sa1);
             ResultSet rs1=pr1.executeQuery();
@@ -223,7 +223,7 @@
 
             <%      
 //MODIFICATION 3...
-            Connection con2 = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con2 = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
             String sa2="select * from requestst where Request='Sent'";
             PreparedStatement pr2=con2.prepareStatement(sa2);
             ResultSet rs2=pr2.executeQuery();

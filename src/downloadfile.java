@@ -84,11 +84,11 @@ public class downloadfile extends HttpServlet {
     //Download status updation...
     //MODIFICATION 2 )...    		
 //                Class.forName("com.mysql.jdbc.Driver").newInstance();
-//                Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "root", "root");
+//                Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "root", "root");
  //MODIFICATION 2 (END)...          
                 
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con2 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
                 String sa1="select * from register where id='"+userid+"' and name='"+name+"' and pkey='"+PUser+"'";
                 PreparedStatement pr=con2.prepareStatement(sa1);
 		ResultSet rs=pr.executeQuery();
@@ -116,7 +116,7 @@ public class downloadfile extends HttpServlet {
           {
               
                Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+                Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...  
             //PreparedStatement ps=con.prepareStatement("update File1 set Upload='Uploaded' where userid='"+userid+"' and FileName='"+radio1+"'");
             String sa2="update requestst set status='Downloaded' where userid='"+userid.trim()+"' and filename='"+File+"'";//+radio1.trim()+"'";

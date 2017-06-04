@@ -56,7 +56,7 @@ public class upload extends HttpServlet {
 //            Class.forName("com.mysql.jdbc.Driver").newInstance();
 //            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
              Class.forName("com.mysql.jdbc.Driver").newInstance();
-             Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+             Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
             String sa = "update files set key1='"+ky+"' where filename='"+fnm+"'";
             PreparedStatement pr = con.prepareStatement(sa);
            int i = pr.executeUpdate();

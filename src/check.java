@@ -29,7 +29,7 @@ public class check {
 //            Class.forName("com.mysql.jdbc.Driver");
 //            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
             PreparedStatement ps1 = con.prepareStatement("select * from files");
             ResultSet rs1 = ps1.executeQuery();
             System.out.println(rs1);
@@ -111,7 +111,7 @@ public class check {
 //            }
             fis.close();
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
             PreparedStatement ps1 = con.prepareStatement("select * from files ");
             ResultSet rs1 = ps1.executeQuery();
             System.out.println(rs1);

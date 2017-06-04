@@ -91,7 +91,7 @@ String s=session.getAttribute("uname1")!=null?session.getAttribute("uname1").toS
 String s1=session.getAttribute("uid1" )!=null?session.getAttribute("uid1" ).toString():"";
 try{
     Class.forName("com.mysql.jdbc.Driver").newInstance();
-             Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.214.173:3306/decentralize", "admin", "admin");
+             Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
            // PreparedStatement ps1=con.prepareStatement("select * from reg where userid='"+s+"' and password='"+s1+"'");
             PreparedStatement ps1=con.prepareStatement("select * from register where name='"+s+"' and id='"+s1+"'");
            // select * from register where id='e' and password='e';
