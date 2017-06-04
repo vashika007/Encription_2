@@ -95,7 +95,14 @@
      
 <!--          <td width="149"><div align="center" class="style1" > <li class ="selected"><a href="Fileview.jsp"><strong style="font-size: 17px; ;color: greenyellow">View Files</strong></a></li></div></td>-->
         <td width="166"><div align="center" class="style1"><a href="Adminresponse.jsp"><strong style="font-size: 17px;color: greenyellow ">Request Status</strong></a></div></td>
-        <%}else{%>
+        <%}
+ else if(type.equals("lab")){%>
+  <td width="149"><div align="center" class="style1" > <li class ="selected"><a href="Deduplication.jsp"><strong style="font-size: 17px; ;color: greenyellow">Upload Document</strong></a></li></div></td>
+  <td width="168"><div align="center" class="style1"><a href="Download.jsp"><strong style="font-size: 17px;color: greenyellow">File Download</strong></a></div></td>
+	 
+ <%}
+ 
+ else{%>
         <td width="168"><div align="center" class="style1"><a href="Download.jsp"><strong style="font-size: 17px;color: greenyellow">File Download</strong></a></div></td>
        <%}%>
       </tr>

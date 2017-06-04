@@ -186,12 +186,12 @@ public class gotocheck extends HttpServlet {
 
 
                         //HttpSession session=request.getSession();
-                        String uname = (String) session.getAttribute("uid");
+                        String userName = (String) session.getAttribute("uname1");
                         f = KeyGenerator.generateRandomString(16);
 //Random rd=new Random();
 //        int f2=rd.nextInt(100000000);
 //         f=Integer.toString(f2);
-                        j.fun(path, fname, full_path,con,f);
+                        j.fun(path, fname, full_path,con,f,userName);
                     }
                 }
 

@@ -56,15 +56,15 @@
                         
                         function downloadCheck()
                         {
-                            var public = document.downloadform.POwner.value;
-                            var private =document.downloadform.PUser.value;
+                            var publicKey = document.downloadform.POwner.value;
+                            var privateKey =document.downloadform.PUser.value;
                         
-                            if(public.length != 16){
+                            if(publicKey.length != 16){
                                 alert("Pulbic key should be of 16 digits");
                                 return ;
                             }
                             
-                            if(private.length != 8){
+                            if(privateKey.length != 8){
                                 alert("Private key should be of 8 digits");
                                 return ;
                             }
@@ -117,6 +117,7 @@
                      <td>S.No</td>
                      <td>File Name</td>
                      <td>File Key</td>
+                     <td>Uploaded By</td>
                 </tr>
           
                 <%
@@ -129,6 +130,7 @@
                         System.err.println("uid" + uid);
                     String Fname1=rs.getString(3);
                     String key1=rs.getString(4);
+                    String userName=rs.getString(2);
                     //request.setAttribute("FName","Fname1");
                     Fname.add(Fname1);
                     Fname.indexOf(i);
@@ -141,6 +143,7 @@
                         <td><%=(i++)%></td> 
                         <td><%=Fname1%></td>
                         <td><%=key1%></td>
+                        <td><%=userName%></td>
                        <!-- <td><font color="white"><input type="radio" name="s" value=</%=Fname1%>>Select for Download<br></font></td>  -->                                    
                 
                 </tr>    
@@ -176,14 +179,5 @@
      %>  
     </form>
         </div>
-    
-
-        
-<div id="templatemo_content_wrapper_bottom"></div> <!-- end of templatemo_wrapper -->
-
-        <div id="templatemo_footer">
-<!--   	    Copyright © 2048 <a href="#">Your Company Name</a> | <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a></div>-->
-</div>
-</div>
 </body>
 </html>

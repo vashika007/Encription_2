@@ -42,7 +42,7 @@ public class Java_Encryption1 {
    
   }
   
-  public void fun(String p,String n,String f,String u,String key)
+  public void fun(String p,String n,String f,String u,String key, String userName)
   {
       //ServletContext s1=setServletContext();
       //String path=(String)s1.getAttribute("FPath");
@@ -56,7 +56,7 @@ public class Java_Encryption1 {
                         String full_path=path+""+fname;
                          String content=u;
                           String s="Not Set";
-                            String ss="Null",usn="Admin";  
+                            String ss="Null",usn=userName;  
 //Folder changes 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                           
                         //String out_put_path="C:/Cloud_Project/"+n;
                             Properties properties = PropertyLoader.getProperties();

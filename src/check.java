@@ -30,7 +30,8 @@ public class check {
 //            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
-            PreparedStatement ps1 = con.prepareStatement("select * from files");
+            PreparedStatement ps1 = con.prepareStatement("select * from files where filename=?");
+            ps1.setString(1, s3);
             ResultSet rs1 = ps1.executeQuery();
             System.out.println(rs1);
             Vector<String> v = new Vector<String>(8);
@@ -118,7 +119,7 @@ public class check {
             Vector<String> v = new Vector<String>(8);
             while (rs1.next()) {
                 v.add(rs1.getString(3));
-                String q = "v";
+//                String q = "v";
             }
             System.out.println(v);
             for (int j = 0; j < v.size(); j++) {
