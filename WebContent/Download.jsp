@@ -94,7 +94,7 @@
   System.err.println("uid" + uid);
 //MODIFICATION 1 )...    		
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con1 = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
+                Connection con1 = (Connection)  DriverManager.getConnection("jdbc:mysql://mysqlhost:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...  
 		//PreparedStatement pr=con.prepareStatement("select * from Reg");
             String sa="select * from requestst where assignee='"+uid+"' and Response='Done'";

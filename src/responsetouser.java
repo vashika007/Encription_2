@@ -53,7 +53,7 @@ public class responsetouser extends HttpServlet {
 //                Class.forName("com.mysql.jdbc.Driver").newInstance();
 //                Connection con1  = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/decentralize", "root", "root");
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
+            Connection con1 = (Connection) DriverManager.getConnection("jdbc:mysql://mysqlhost:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...  
                 
                 String sa1="select * from files where Filename='"+FileName.trim()+"'";
@@ -67,7 +67,7 @@ public class responsetouser extends HttpServlet {
                 pr1.close();        
 //MODIFICATION 1 )...    		
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
+                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://mysqlhost:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...               
            String sa2="Update requestst set response='Done',dres='"+now+"',Key2='"+key+"' where userid='"+user.trim()+"' and filename='"+FileName+"'";
            // String sa2="update request set Key='"+key+"' where userID='"+user.trim()+"'";

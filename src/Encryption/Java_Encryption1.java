@@ -88,7 +88,7 @@ public class Java_Encryption1 {
 SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd");
 String das=formatter.format(currentDate.getTime());
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
+                Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://mysqlhost:3306/decentralize", "admin", "admin");
  //MODIFICATION 1 (END)...               
 
                     String qry = "Insert into files values('" + (out_put_path.trim()) + "','"+ (fname.trim()) + "','"+content+"','"+usn+"','"+das+"','"+s+"','"+ss+"','verified')";

@@ -138,7 +138,7 @@
             String uid=(String)session.getAttribute("uid");
               //MODIFICATION 2 )...    		
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://172.30.96.167:3306/decentralize", "admin", "admin");
+                Connection con = (Connection)  DriverManager.getConnection("jdbc:mysql://mysqlhost:3306/decentralize", "admin", "admin");
  //MODIFICATION 2 (END)...          
   	//PreparedStatement pr=con.prepareStatement("select * from Reg");
             String sa="select * from requestst where request='Sent' and response='Done'";
