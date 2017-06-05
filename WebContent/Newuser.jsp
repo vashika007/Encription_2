@@ -77,8 +77,8 @@
                         
                         function checkInput()
                         {
-                            var private = document.newuser.pkey.value;
-                            if(private.length != 8){
+                            var privateKey = document.newuser.pkey.value;
+                            if(privateKey.length != 8){
                                 alert("Private key must be of 8 digits ");
                             }else{
                                 document.newuser.action = "Newuser";
@@ -149,10 +149,5 @@ Enter your Mail id :<input type="mail" name="mid" required="" style="border-radi
     
 
 </div><div id="templatemo_content_wrapper_bottom"></div> <!-- end of templatemo_wrapper -->
-
-        <div id="templatemo_footer">
-   	    Copyright © 2048 <a href="#">Your Company Name</a> | <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a></div>
-</div>
-</div>
-<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</body>
 </html>

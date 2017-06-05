@@ -131,7 +131,7 @@ try{
  
               </div>
     
-
+<div id="templatemo_content_wrapper_bottom"></div> <!-- end of templatemo_wrapper -->
         
 </body>
 </html>
